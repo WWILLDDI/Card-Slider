@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Card Slider 🖼</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Card Slider</title>
   </head>
   <body>
-    <div class="slide-container">
+    <div class="slide-container swiper">
       <div class="slide-content">
-        <div class="card-wrapper">
-          <div class="card">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
             <div class="image-content">
               <span class="overlay"> </span>
               <div class="card-image">
@@ -32,11 +35,204 @@
             <div class="card-content">
               <h2 class="soda-name">Dr. Pepper Original</h2>
               <p class="description">
-                Dr Pepper is a carbonated soft drink. It was created in the
-                1880s by pharmacist Charles Alderton in Waco, Texas, and first
-                served around 1885. Dr Pepper was first nationally marketed in
-                the United States in 1904. It is now also sold in Europe, Asia,
-                North and South America.
+                Dr Pepper was created in the 1880s by pharmacist Charles
+                Alderton in Waco, Texas, and first served around 1885. Dr Pepper
+                was first nationally marketed in the United States in 1904. It
+                is now also sold in Europe, Asia, North and South America.
+              </p>
+
+              <button class="button">View more</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="images/canada-dry.jpg"
+                  alt="Canada Dry Soda"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Canada Dry</h2>
+              <p class="description">
+                Canada Dry was founded in 1904 and owned since 2008 by the
+                American company Keurig Dr Pepper. With the same taste as Diet,
+                it combines the classic ginger taste of Canada Dry Zero Sugar
+                Ginger Ale with a splash of lemonade made with real lemon juice.
+              </p>
+
+              <button class="button">View more</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="images/la-croix-water.jpg"
+                  alt="La Croix Sparkling Water"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">La Croix</h2>
+              <p class="description">
+                LaCroix is the bright and trendy drink we can't miss in the
+                sparkling water section of the grocery store. It has numerous
+                flavors to try, each an excellent alternative to soda. So, a can
+                of LaCroix will do you some good if you're on a strict diet.
+              </p>
+
+              <button class="button">View more</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="images/watermelon-soda.jpg"
+                  alt="Watermelon Korean Soda"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Watermelon Soda</h2>
+              <p class="description">
+                Enjoy the 'nutrition & taste' of everyone's favourite fruit -
+                the humble watermelon - in this brand new soda can all the way
+                from Korea. This tasty beverage is packed full of an intense but
+                refreshing flavour that tastes exactly like a watermelon should.
+              </p>
+
+              <button class="button">View more</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="images/coca-cola-zero.jpg"
+                  alt="Coca Cola Zero Soda"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Coca Cola Zero</h2>
+              <p class="description">
+                Coca-Cola Zero was Coca-Cola's largest product launch in 22
+                years. The global campaign was developed by creative agency
+                Crispin Porter + Bogusky.It was marketed as having a taste that
+                is indistinguishable from standard Coca-Cola, as opposed to Diet
+                Coke, which has a different flavor profile.
+              </p>
+
+              <button class="button">View more</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="images/mtn-dew.jpg"
+                  alt="Mountain Dew Soda"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Montain Dew</h2>
+              <p class="description">
+                Mountain Dew was first created in the 1940s by two Tennessee
+                brothers. The soda has a unique flavor that is both sweet and
+                tart, due to the combination of citrusy and caffeinated flavors.
+                Mountain Dew is also less carbonated than other sodas, which
+                makes it more refreshing.
+              </p>
+
+              <button class="button">View more</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="images/cidral-mundet.jpg"
+                  alt="Sidral Mundet Soda"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Sidral Mundet</h2>
+              <p class="description">
+                Sidral Mundet is Mexico's original apple soda and part of
+                Mexico's heritage since 1902, is a natural, healthy family
+                favorite made with real apple juice and believed to have medical
+                benefits due to its pasteurization process.
+              </p>
+
+              <button class="button">View more</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="images/crush-cream.jpg"
+                  alt="Crush Cream Soda"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">Crush Cream</h2>
+              <p class="description">
+                Crush Cream Soda, Released in Canada and loved by every Canadian
+                since 1916. Crush Cream Soda delivers a sweet, creamy goodness
+                to your taste buds each time! The perfect size to bring to your
+                next party or get together.
+              </p>
+
+              <button class="button">View more</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"> </span>
+              <div class="card-image">
+                <img
+                  src="images/seven-up.jpg"
+                  alt="Seven Up Soda"
+                  class="card-img"
+                />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="soda-name">7 Up</h2>
+              <p class="description">
+                7 Up is first introduced in 1929 in the United States. It is the
+                main drink in the 7 Up line and is commonly referred to as the
+                "original" flavor in the world that is being sold in stores,
+                restaurants, and vending machines.
               </p>
 
               <button class="button">View more</button>
@@ -44,8 +240,13 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <script src="script.js"></script>
+      <div class="swiper-button-next swiper-nav-btn"></div>
+      <div class="swiper-button-prev swiper-nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
   </body>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </html>

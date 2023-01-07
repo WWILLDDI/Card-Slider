@@ -12,7 +12,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #777;
+  /* background-color: #777; */
+  background-color: #333;
 }
 
 .slide-container {
@@ -22,11 +23,14 @@ body {
 }
 
 .slide-content {
+  /* padding: 0 10px; */
   margin: 0 40px;
+  /* background-color: pink; */
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .card {
-  width: 320px;
   border-radius: 25px;
   background-color: #dae7db;
 }
@@ -36,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 14px;
 }
 
@@ -43,6 +48,10 @@ body {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
+}
+
+.card-content {
+  height: 280px;
 }
 
 .overlay {
@@ -91,13 +100,13 @@ body {
 .soda-name {
   font-size: 18px;
   margin-bottom: 6px;
-  font-weight: 600;
+  font-weight: 700;
   color: #202020;
 }
 
 .description {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #3b3b3b;
   text-align: center;
 }
@@ -106,6 +115,7 @@ body {
   border: none;
   font-size: 16px;
   color: #3b3b3b;
+  font-weight: 600;
   padding: 8px 16px;
   background-color: #fac375;
   border-radius: 6px;
@@ -116,4 +126,46 @@ body {
 
 .button:hover {
   background-color: #fda05d;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-nav-btn {
+  color: #fac375;
+  transition: all 0.2s ease;
+}
+
+.swiper-nav-btn:hover {
+  color: #fda05d;
+}
+
+.swiper-nav-btn::before,
+.swiper-nav-btn::after {
+  font-size: 40px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fac375;
+  opacity: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fda05d;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-nav-btn {
+    display: none;
+  }
 }
